@@ -1,0 +1,76 @@
+{
+  "hash": "e436e555",
+  "configHash": "ff985105",
+  "lockfileHash": "10602aab",
+  "browserHash": "a10a84a7",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "9f61be1e",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "ca8d5027",
+      "needsInterop": true
+    },
+    "react-redux": {
+      "src": "../../node_modules/react-redux/dist/react-redux.mjs",
+      "file": "react-redux.js",
+      "fileHash": "219ddb8f",
+      "needsInterop": false
+    },
+    "redux-persist/integration/react": {
+      "src": "../../node_modules/redux-persist/es/integration/react.js",
+      "file": "redux-persist_integration_react.js",
+      "fileHash": "d4f7408a",
+      "needsInterop": false
+    },
+    "@reduxjs/toolkit": {
+      "src": "../../node_modules/@reduxjs/toolkit/dist/redux-toolkit.modern.mjs",
+      "file": "@reduxjs_toolkit.js",
+      "fileHash": "c4ed8522",
+      "needsInterop": false
+    },
+    "redux-persist": {
+      "src": "../../node_modules/redux-persist/es/index.js",
+      "file": "redux-persist.js",
+      "fileHash": "a480bb05",
+      "needsInterop": false
+    },
+    "redux-persist/lib/storage": {
+      "src": "../../node_modules/redux-persist/lib/storage/index.js",
+      "file": "redux-persist_lib_storage.js",
+      "fileHash": "8e5dce78",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "f592713b",
+      "needsInterop": false
+    },
+    "flowbite-react": {
+      "src": "../../node_modules/flowbite-react/dist/esm/index.mjs",
+      "file": "flowbite-react.js",
+      "fileHash": "44d8c72e",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-MBT3EELI": {
+      "file": "chunk-MBT3EELI.js"
+    },
+    "chunk-TUX7A2JK": {
+      "file": "chunk-TUX7A2JK.js"
+    },
+    "chunk-4SFRHSJ3": {
+      "file": "chunk-4SFRHSJ3.js"
+    },
+    "chunk-EQCVQC35": {
+      "file": "chunk-EQCVQC35.js"
+    }
+  }
+}

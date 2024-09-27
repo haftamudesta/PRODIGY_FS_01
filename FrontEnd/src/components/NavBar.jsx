@@ -26,7 +26,10 @@ const NavBar = () => {
     <div className="flex justify-between bg-sky-500 h-[60px] items-center pl-4 pr-4">
       <Link to='/' className="self-center whitespace-nowrap text-sm sm:text-xl font-semibold"><span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white mr-4">User</span>Authentication
       and Authorization </Link>
+      <div className="flex gap-8">
       <Link to='/' className="text-white">Home</Link>
+      <Link to='/about' className="text-white">About</Link>
+      </div>
         {currentUser?(
           <div> 
               <button onClick={handleSignOut}>Sign Out</button>
