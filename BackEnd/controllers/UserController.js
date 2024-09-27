@@ -62,17 +62,17 @@ const signOut = (req,res,next)=>{
     }
 }
 const getUsers =async (req,res,next)=>{
-    if(req.user.role!=="admin"){
-        next(errorHandler(403,"you do not have access to all users"))
-    }
+     if(req.user.role!=="admin"){
+         next(errorHandler(403,"you do not have access to all users"))
+     }
     try{
         const startIndex=parseInt(req.body.startIndex) || 0;
         const limit=parseInt(req.body.limit) || 0;
         const sortDirection=req.body.sort==='asc'?1:-1;
         const users=await ProdigyUser.find()
-        .sort({createdAt:sortDirection})
-        .skip(startIndex)
-        .limit(limit)
+         .sort({createdAt:sortDirection})
+         .skip(startIndex)
+         .limit(limit)
         const usersWithOutPassword=users.map(user=>{
            const {password,...rest}=user._doc;
            return rest;
@@ -84,7 +84,7 @@ const getUsers =async (req,res,next)=>{
             now.getMonth()-1,
             now.getDate(),
         )
-        const lastMonthUsers=await MernUser.countDocuments(
+        const lastMonthUsers=await ProdigyUser.countDocuments(
             {createdAt:{$gte:oneMonthAgo}}
         )
         res.status(200).json({

@@ -5,7 +5,7 @@ const errorHandler = require('../utils/Error');
 
 
 const signUp=async (req,res,next)=>{
-    const {username,email,password}=req.body;
+    const {username,email,password,role}=req.body;
     if(!username || !email ||!password ||username==='' ||email==='' ||password===''){
         //res.status(400).json({message:"All fields are required"});
         next(errorHandler(400,"All fields are required"))
@@ -16,6 +16,7 @@ const signUp=async (req,res,next)=>{
         username,
         email,
         password:hashedPassword,
+        role,
     })
     try{
     await newUser.save();
@@ -45,7 +46,6 @@ const signIn=async (req,res,next)=>{
         .status(200)
         .cookie('access_token',token,{httpOnly:true})
         .json(rest);
-
     }catch(error){
         next(error);
     }
